@@ -1,0 +1,6 @@
+{{#each model as |soup|}}
+  {{#link-to "soups.soup" soup.slug}}
+    {{soup.title}}
+  {{/link-to}}
+  <hr>
+{{/each}}

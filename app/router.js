@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('soups', function() {
+    this.route('soup', {path: '/:slug'});
+  });
+
 });
 
 export default Router;
